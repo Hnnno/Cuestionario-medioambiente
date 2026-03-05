@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel: Asignación de residuos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+     <nav>
+        <a href="index.html" id="inicio">Volver a la pantalla de inicio</a>
+    </nav>
+</header>
+    <h1>Vamos a reciclar.
+    </h1>
+
+    <p> Ingresar las siguientes casillas en los contenedores correspondientes.</p>
+
+    <div id="basura-container">
+        <div class="item" data-tipo="vidrio" draggable="true">Botella común</div>
+        <div class="item" data-tipo="papel" draggable="true">Diario</div>
+        <div class="item" data-tipo="plastico" draggable="true">Botella de plástico</div>
+        <div class="item" data-tipo="organico" draggable="true">Cáscara de banana</div>
+        <div class="item" data-tipo="plastico" draggable="true">Bolsa</div>
+        <div class="item" data-tipo="papel" draggable="true">Caja de cartón</div>
+        <div class="item" data-tipo="vidrio" draggable="true">Vela de luz</div>
+        <div class="item" data-tipo="organico" draggable="true">Restos de Comida</div>
+    </div>
+
+    <div id="contenedores-container">
+        <div class="contenedor" data-acepta="vidrio">Vidrio </div>
+        <div class="contenedor" data-acepta="plastico">Plástico </div>
+        <div class="contenedor" data-acepta="papel">Papel </div>
+        <div class="contenedor" data-acepta="organico">Orgánico </div>
+    </div>
+
+        <div id="resultado">
+            Puntuación: <span id="puntuacion">0</span>
+            | Tiempo: <span id="temporizador">60</span> 
+        </div>
+
+    </div>
+    <br>
+    <footer>
+            <a href="segundonivel.html" class="cta-button"> Pasar al segundo nivel</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

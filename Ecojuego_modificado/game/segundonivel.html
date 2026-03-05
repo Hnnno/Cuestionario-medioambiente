@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel: contaminación</title>
+    <link rel="stylesheet" href="segundo.css">
+</head>
+<body>
+     <header>
+     <nav>
+        <a href="index.html" id="inicio">Volver a la pantalla de inicio</a>
+    </nav>
+</header>
+
+    <h1>Clasificación de Basura.</h1>
+    <p>Asigna correctamente la basura en su contenedor correspondiente; Perderás tu progreso si contaminas demasiado los contenedores.</p>
+
+    <div id="basura-container">
+        <div class="item" draggable="true" data-tipo="papel">Revista</div>
+        <div class="item" draggable="true" data-tipo="no_reciclable">Servilleta sucia</div> 
+        <div class="item" draggable="true" data-tipo="papel">Periódico</div>
+
+        <div class="item" draggable="true" data-tipo="vidrio">Botella de vino</div>
+        <div class="item" draggable="true" data-tipo="no_reciclable">Cerámica rota</div> 
+        <div class="item" draggable="true" data-tipo="vidrio">Frasco de mermelada</div>
+
+        <div class="item" draggable="true" data-tipo="plastico">Botella de agua</div>
+        <div class="item" draggable="true" data-tipo="plastico">Lamina folex</div>
+        <div class="item" draggable="true" data-tipo="no_reciclable">Aceite de cocina</div> 
+        <div class="item" draggable="true" data-tipo="organico">Cáscaras de huevo</div>
+        <div class="item" draggable="true" data-tipo="organico">Restos de fruta</div>
+        <div class="item" draggable="true" data-tipo="organico">Filtro de café</div>
+    </div>
+
+    <div id="contenedores-container">
+        <div class="contenedor" data-acepta="papel">PAPEL</div>
+        <div class="contenedor" data-acepta="vidrio">VIDRIO</div>
+        <div class="contenedor" data-acepta="plastico">PLÁSTICO</div>
+        <div class="contenedor" data-acepta="organico">ORGÁNICO</div>
+        <div class="contenedor" data-acepta="no_reciclable">NO RECICLABLE</div>
+    </div>
+
+    <br>
+    <div id="resultado">
+        <div class="info-panel">Puntuación: <span id="puntuacion">0</span></div>
+        <div class="info-panel">Tiempo Restante: <span id="temporizador">90</span></div>
+        <div class="info-panel">Estado: <span id="estado-contaminacion">Limpio</span></div>
+    </div>
+<br>
+<footer>
+        <a href="final.html" class="cta-button"> Pasar al tercer nivel</a>
+</footer>
+    <script src="app2.js"></script>
+</body>
+</html>
